@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="excellence" translate="label" sortOrder="100">
+            <label>Excellence</label>
+        </tab>
+        <section id="twilio" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Twilio</label>
+            <tab>excellence</tab>
+            <resource>Excellence_Twilio::twilio_config</resource>
+            <group id="twilio_settings" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Twilio Settings</label>
+                <field id="api_key" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>ACCOUNT SID</label>
+                    <comment><![CDATA[Enter API ACCOUNT SID generated from <a href='https://www.twilio.com/' target='_blank'>twilio.com</a>]]></comment>
+                </field>
+                <field id="api_token" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>AUTH TOKEN</label>
+                    <comment><![CDATA[Enter API AUTH TOKEN generated from <a href='https://www.twilio.com/' target='_blank'>twilio.com</a>]]></comment>
+                </field>
+                <field id="sms_sender" translate="label" type="text" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>SMS Sender No.</label>
+                    <comment><![CDATA[Enter SMS Sender number generated from <a href='https://www.twilio.com/' target='_blank'>twilio.com.</a> Ex: +1555XXXXXXX]]></comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
