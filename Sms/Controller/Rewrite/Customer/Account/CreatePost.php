@@ -97,11 +97,11 @@ class CreatePost extends \Magento\Customer\Controller\Account\CreatePost
         $this->accountRedirect = $accountRedirect;
 
         return parent::__construct($context,$customerSession,
-        $scopeConfig,$storeManager,$customerRepository,
+        $scopeConfig,$storeManager,
         $accountManagement,$addressHelper,$urlFactory,
         $formFactory,$subscriberFactory,$regionDataFactory,
         $addressDataFactory,$customerDataFactory,$customerUrl,
-        $registration,$escaper,$customerExtractor,$dataObjectHelper,$accountRedirect
+        $registration,$escaper,$customerExtractor,$dataObjectHelper,$accountRedirect,$customerRepository
       
         );
     }
