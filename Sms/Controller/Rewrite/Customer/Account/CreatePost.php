@@ -69,7 +69,7 @@ class CreatePost extends \Magento\Customer\Controller\Account\CreatePost
         Escaper $escaper,
         CustomerExtractor $customerExtractor,
         DataObjectHelper $dataObjectHelper,
-        AccountRedirect $accountRedirect,
+        AccountRedirect $accountRedirect
     )
     {
         $this->_loginFactory = $loginFactory;
